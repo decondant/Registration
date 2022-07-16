@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register Form</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="center">
+  	<h1>Registration</h1>
+	<form action="insert.php" method="POST">
+		<table>
+			<div class="text_field">
+			<tr>
+				<td>Name :</td>
+				<td><input type="text" placeholder="Username" name="username" required></td>
+			</tr>
+			</div>
+			<div class="text_field">
+			<tr>
+				<td>Password :</td>
+				<td><input type="password" required placeholder="Password" name="password"></td>
+			</tr>
+		</div>
+			<tr>
+				<td>Gender :</td>
+				<td>
+					<input type="radio" required name="gender" value="m">Male
+					<input type="radio" name="gender" required value="f">Female
+				</td>
+			</tr>
+			<tr>
+				<td>Email :</td>
+				<td><input type="email" name="email" required></td>
+			</tr>
+			<tr>
+				<td>Phone no :</td>
+				<td>
+					<select name="phoneCode">
+						<option selected hidden value="">Select Code</option>
+						<option value="977">977</option>
+						<option value="978">978</option>
+						<option value="979">979</option>
+						<option value="973">973</option>
+						<option value="972">972</option>
+						<option value="974">974</option>
+					</select>
+					<input type="phone" name="phone">
+				</td>
+			</tr>
+			<tr>
+				<td><input type="submit" name="btn" value="Submit"></td>
+			</tr>
+		</table>
+
+	</form>
+   </div>
+</body>
+</html>
